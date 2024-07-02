@@ -2,6 +2,6 @@ FROM nginx:alpine
 
 WORKDIR /etc/nginx
 COPY ./nginx.conf ./conf.d/default.conf
-EXPOSE $PORT
+EXPOSE 80
 ENTRYPOINT [ "nginx" ]
 CMD [ "-g", "daemon off;" ]
